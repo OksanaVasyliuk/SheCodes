@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Python 🐍</title>
+    <style>
+      @import url("http://fonts.cdnfonts.com/css/snake");
+      body {
+        background-image: linear-gradient(#4ca1af, #2c3e50);
+        margin: 0px;
+        text-align: center;
+      }
+      .overall {
+        display: block;
+
+        background-color: white;
+        margin: 3% 25%;
+        border-radius: 20px;
+        width: 50%;
+      }
+
+      .box_name {
+        display: inline-block;
+        width: 45%;
+        margin: 2%;
+        text-align: justify;
+        font-size: 30px;
+        font-weight: bold;
+        border: darkgrey 2px;
+        border-radius: 10px;
+        background-color: azure;
+        font-family: "Snake", sans-serif;
+      }
+      .box_link {
+        /* background-color: red; */
+        display: inline-block;
+        width: 45%;
+        margin: 2%;
+        font-size: medium;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: large;
+      }
+      h1 {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+        color: #2c3e50;
+        /* padding-top: 20px; */
+        font-size: 60px;
+      }
+      h2 {
+        text-align: center;
+        color: #4ca1af;
+        font-family: "Snake", sans-serif;
+        font-size: 60px;
+        margin: 0px auto;
+      }
+      img {
+        width: 50%;
+        display: block;
+        margin: 10px auto;
+        border-radius: 9px;
+      }
+      a {
+        display: block;
+        margin: 10px auto;
+        font-family: "Snake", sans-serif;
+        font-size: 65px;
+        text-decoration: none;
+        font-weight: bolder;
+        color: #2c3e50;
+      }
+      .main-text {
+        text-align: justify;
+        margin: 20px 20px;
+      }
+
+      button {
+        background-color: #2c3e50;
+        border: none;
+        font-size: 36px;
+        border-radius: 15px;
+        color: #4ca1af;
+        display: block;
+        padding: 10px 20px;
+        transition: opacity 150ms ease-in-out;
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 5px 10px 20px rgb(0 0 0 / 50%);
+        margin: 20px auto;
+      }
+      button:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overall">
+      <h1>PYTHON</h1>
+      <h2>My favorite programming language</h2>
+      <hr />
+      <img
+        src="https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/3/2/7/1/0/5/3/ct0522pythonfur_118376_pmk_a3.jpg-9a198c57e5724278.jpeg?force_format=avif%2Cwebp%2Cjpeg&org_if_sml=1&q=85&width=610"
+        alt="python logo"
+      />
+      <hr />
+      <p class="main-text">
+        Python is a computer programming language often used to build websites
+        and software, automate tasks, and conduct data analysis. Python is a
+        general-purpose language, meaning it can be used to create a variety of
+        different programs and isn’t specialized for any specific problems. This
+        versatility, along with its beginner-friendliness, has made it one of
+        the most-used programming languages today.
+      </p>
+
+      <p class="box_name">
+        <strong> Did you know?</strong>
+        <br />
+        The name Python comes from Monty Python. When Guido van Rossum was
+        creating Python, he was also reading the scripts from BBC's Monty
+        Python's Flying Circus. He thought the name Python was appropriately
+        short and slightly mysterious.
+      </p>
+
+      <p class="box_link">
+        <strong>Do you want to play famous snake game?</strong>
+        <br />
+        <br />
+        <strong> Click over here</strong>
+        <br />
+        <br />
+        👇👇👇
+        <br />
+        <br />
+        <a href="https://g.co/kgs/vKAzJL">Play the GAME</a>
+      </p>
+      <br />
+
+      <button>MORE GAMES</button>
+      <br />
+    </div>
+
+    <script>
+      let applyButton = document.querySelector("button");
+
+      function collectEmail() {
+        let name = prompt("What is our name?");
+        let email = prompt("What is your email?");
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            "Thanks " +
+              name +
+              ", we will send you more games created with Python language. Enjoy!"
+          );
+        }
+      }
+      applyButton.addEventListener("click", collectEmail);
+    </script>
+  </body>
+</html>
